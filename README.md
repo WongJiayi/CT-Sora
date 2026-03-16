@@ -8,7 +8,7 @@ The project adapts the [Open-Sora](https://github.com/hpcaitech/Open-Sora) frame
 
 ## Demo
 
-![CT-Sora Demo](assets/CTSora teaser image.png)
+![CT-Sora Demo](<assets/CTSora teaser image.png>)
 
 ---
 
