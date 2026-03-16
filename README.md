@@ -6,6 +6,12 @@ The project adapts the [Open-Sora](https://github.com/hpcaitech/Open-Sora) frame
 
 ---
 
+## Demo
+
+<!-- Place demo images/videos in assets/ and update the paths below -->
+
+---
+
 ## Architecture
 
 - **Backbone**: MMDiT (Flux-style Multimodal Diffusion Transformer)
@@ -26,7 +32,7 @@ The project adapts the [Open-Sora](https://github.com/hpcaitech/Open-Sora) frame
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/CT-Sora.git
+git clone https://github.com/WongJiayi/CT-Sora.git
 cd CT-Sora
 
 # Install dependencies
@@ -37,9 +43,9 @@ pip install -r requirements.txt
 ### Requirements
 
 - Python >= 3.10
-- PyTorch >= 2.0
+- PyTorch >= 2.4
 - ColossalAI
-- HuggingFace Transformers
+- HuggingFace Transformers, Diffusers
 - einops, decord, wandb
 
 See `requirements.txt` for the full list.
@@ -66,7 +72,7 @@ CT-Sora expects video data referenced by a CSV file, where the first column cont
 ...
 ```
 
-For pre-computing text embeddings (cached_text mode), run:
+To generate a CSV from a folder of videos, run:
 
 ```bash
 python scripts/cnv/generate_csv.py --input_dir /path/to/videos --output /path/to/data.csv
@@ -143,8 +149,7 @@ CT-Sora/
 │   │   │   └── stage1_new.py       # Stage 1 config
 │   │   └── inference/              # Inference configs
 │   └── vae/                        # VAE configs
-├── gradio/                         # Gradio demo app
-├── assets/                         # Example prompts and data
+├── assets/                         # Demo images and example outputs
 ├── docs/                           # Documentation
 ├── ckpt/                           # Model weights (not tracked by git)
 └── requirements.txt
@@ -193,6 +198,6 @@ If you use CT-Sora in your research, please cite:
   author       = {IDEA Lab, FAU Erlangen-Nürnberg},
   year         = {2025},
   institution  = {Friedrich-Alexander-Universität Erlangen-Nürnberg},
-  howpublished = {\url{https://github.com/YOUR_USERNAME/CT-Sora}}
+  howpublished = {\url{https://github.com/WongJiayi/CT-Sora}}
 }
 ```
