@@ -8,7 +8,7 @@ The project adapts the [Open-Sora](https://github.com/hpcaitech/Open-Sora) frame
 
 ## Demo
 
-<!-- Place demo images/videos in assets/ and update the paths below -->
+![CT-Sora Demo](assets/CTSora teaser image.png)
 
 ---
 
