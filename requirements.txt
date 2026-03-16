@@ -1,0 +1,51 @@
+# Core deep learning
+torch>=2.4.0
+torchvision>=0.19.0
+
+# Distributed training
+colossalai>=0.4.4
+
+# Model components
+diffusers>=0.29.2
+transformers>=4.40.0
+accelerate>=0.29.2
+safetensors
+peft
+einops
+
+# Efficient kernels
+liger-kernel>=0.5.2
+
+# Config & experiment management
+mmengine>=0.10.3
+omegaconf>=2.3.0
+wandb>=0.17.0
+tensorboard>=2.14.0
+
+# Data loading & processing
+decord
+av>=13.1.0
+numpy
+Pillow
+tqdm
+ftfy>=6.2.0
+pandas>=2.0.3
+pandarallel>=1.6.5
+pyarrow
+
+# Optional: faster attention (install manually for your CUDA version)
+# flash-attn
+# xformers
+
+# Optional: async checkpoint IO
+# tensornvme
+
+# Optional: large parquet sharding
+# dask[dataframe]
+
+# Utilities
+opencv-python
+huggingface_hub
+psutil
+openai
+gradio
